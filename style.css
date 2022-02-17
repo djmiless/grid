@@ -1,0 +1,100 @@
+:root {
+  box-sizing: border-box;
+}
+
+body > * {
+}
+
+* {
+  margin: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 0.5fr 9fr;
+  grid-template-rows: 1fr;
+  position: relative;
+}
+
+.aside {
+  background-color: grey;
+  position: relative;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr;
+  color: black;
+}
+
+.nav {
+  display: flex;
+  width: 100%;
+}
+
+.nav > * {
+  margin-left: 20px;
+}
+
+.search > input {
+  height: 3em;
+  width: 500px;
+}
+
+.sub-nav {
+  display: flex;
+}
+.sub-nav-menu {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.sub-nav-menu-item {
+  margin-left: 1em;
+}
+
+.hero {
+  background-color: black;
+  height: 300px;
+}
+
+.second-row {
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.fly-in {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 60%;
+  left: 0;
+  z-index: 1;
+  background-color: aqua;
+  transform: translateX(-100%);
+  transition-duration: 500ms;
+  transition-property: all;
+  transition-delay: 500ms;
+  transition-timing-function: cubic-bezier(0.13, 0.13, 0.76, 0.17);
+}
+
+/* .target {
+  transform: translateX(100%);
+  transition-duration: 500ms;
+  transition-property: all;
+  transition-delay: 500ms;
+  transition-timing-function: ease-in;
+} */
+
+/* 
+.fly-over:hover {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: aqua;
+  transform: translate(100%);
+} */
